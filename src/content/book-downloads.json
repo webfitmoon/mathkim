@@ -1,0 +1,55 @@
+{
+  "sources": {
+    "scripts/build-book-pdfs.mjs": "1a00dc9ed47974fd3a2587589d38649fec478719ebffefb1c6a720687541a1e8",
+    "src/app/book/reader.css": "1d9965d982b270321ed221779ba7f109689a3cd2204d3cbd6423ba533f4f1c16",
+    "src/content/book/book.json": "5bb4b71c0f4ed16105417f58d4d183d3e4689a7ba7806faf060b6d0c88c647ba",
+    "src/content/pdf/print.css": "95508a304af8f25086c1863d1cbd60565f0fcb8b007d04616e0f1087dd38c7b5",
+    "src/content/story/story.json": "21ef40bd2a0302dc9ce541c87b2c2662816529bc1e6860b6daf440a5fde8e8ac"
+  },
+  "files": [
+    {
+      "book": "book",
+      "locale": "ko",
+      "title": "수학, 머리로 풀지 마라",
+      "filename": "mathskim-book-ko.pdf",
+      "href": "/downloads/mathskim-book-ko.pdf",
+      "pages": 61,
+      "sections": 13,
+      "bytes": 2739617,
+      "sha256": "50a96d229ce79dc749f285da53e6af06884e780a0b477481dcc9314a6d521074"
+    },
+    {
+      "book": "book",
+      "locale": "en",
+      "title": "Don't Solve Math in Your Head",
+      "filename": "mathskim-book-en.pdf",
+      "href": "/downloads/mathskim-book-en.pdf",
+      "pages": 70,
+      "sections": 13,
+      "bytes": 1714882,
+      "sha256": "5cc9db2766aff51655226653174bb46450da2240983fba5fde744fa181afef0d"
+    },
+    {
+      "book": "story",
+      "locale": "ko",
+      "title": "돌아서 간 길",
+      "filename": "mathskim-story-ko.pdf",
+      "href": "/downloads/mathskim-story-ko.pdf",
+      "pages": 17,
+      "sections": 6,
+      "bytes": 565932,
+      "sha256": "481f32af8845df011a0c8c1c021d756d2cd3ae19044514ed431a36df92233eb8"
+    },
+    {
+      "book": "story",
+      "locale": "en",
+      "title": "The Long Way Round",
+      "filename": "mathskim-story-en.pdf",
+      "href": "/downloads/mathskim-story-en.pdf",
+      "pages": 19,
+      "sections": 6,
+      "bytes": 238850,
+      "sha256": "504fc22f08f00651a41c505fcd400ed5979415c9a532cdacd7dcfb5ae937ac3c"
+    }
+  ]
+}

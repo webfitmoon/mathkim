@@ -1,0 +1,50 @@
+@page { size: A4; margin: 19mm 20mm 21mm; }
+* { box-sizing: border-box; }
+:root {
+  --r-fg: #20332e; --r-muted: #52635c; --r-accent: #176454;
+  --r-panel: #f7f9f5; --r-panel-2: #edf2ed; --r-line: #cedbd2;
+  --r-kicker: #176454; --r-amber: #805600; --r-size: 11pt; --r-lh: 1.72;
+  --font-geist-mono: "Apple SD Gothic Neo", sans-serif;
+}
+html { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+body {
+  width: 170mm; margin: 0; color: var(--r-fg); background: white;
+  font-family: "Apple SD Gothic Neo", "Noto Sans CJK KR", "Noto Sans KR", Arial, sans-serif;
+  font-size: 11pt; line-height: 1.72;
+}
+a { color: var(--r-accent); text-decoration: none; }
+p { orphans: 3; widows: 3; }
+h1, h2, h3, h4, dt { break-after: avoid; }
+.pdf-cover { break-after: page; padding-top: 25mm; }
+.pdf-brand { padding-bottom: 8mm; border-bottom: 1px solid var(--r-line); font-size: 12pt; letter-spacing: 3px; }
+.pdf-edition { margin: 16mm 0 6mm; color: var(--r-accent); font-size: 10pt; }
+.pdf-cover h1 { max-width: 155mm; margin: 0 0 12mm; font-size: 40pt; line-height: 1.2; letter-spacing: -1.4px; word-break: keep-all; }
+.pdf-subtitle { max-width: 145mm; font-size: 14pt; line-height: 1.65; }
+.pdf-author { margin-top: 18mm; font-size: 13pt; }
+.pdf-colophon { max-width: 145mm; margin-top: 24mm; color: var(--r-muted); font-size: 9pt; }
+.pdf-toc { break-after: page; }
+.pdf-toc h1 { margin: 8mm 0; font-size: 25pt; }
+.pdf-toc ol { list-style: none; padding: 0; }
+.pdf-toc li { border-bottom: 1px solid var(--r-line); padding: 3mm 0; break-inside: avoid; }
+.pdf-toc small { display: inline-block; min-width: 28mm; color: var(--r-muted); }
+.pdf-chapter + .pdf-chapter { break-before: page; }
+.pdf-chapter-header { padding: 6mm 0 7mm; margin-bottom: 8mm; border-bottom: 1px solid var(--r-line); break-inside: avoid; }
+.pdf-chapter-header p { color: var(--r-accent); font-size: 10pt; margin: 0 0 3mm; }
+.pdf-chapter-header h1 { margin: 0; font-size: 26pt; line-height: 1.3; word-break: keep-all; }
+.reader-body .math-scroll, .reader-body .table-scroll, .reader-body math[display="block"] { overflow: visible; }
+.reader-body .math-scroll { max-width: 100%; }
+.reader-body .box, .reader-body .opening-problem, .reader-body .concept-net,
+.reader-body .qna-card, .reader-body .worksheet-example, .reader-body .roadmap-card,
+.reader-body .decode-flow li, .reader-body .gloss-caution { break-inside: avoid; border-radius: 3px; }
+.reader-body .box { padding: 4mm; margin: 6mm 0; }
+.reader-body .decode-flow { break-inside: avoid; }
+.reader-body .grid { display: block; }
+.reader-body .roadmap-card + .roadmap-card { margin-top: 4mm; }
+.reader-body table { width: 100%; min-width: 0; table-layout: fixed; }
+.reader-body td, .reader-body th { min-width: 0; overflow-wrap: anywhere; }
+.reader-body tr { break-inside: avoid; }
+.reader-body thead { display: table-header-group; }
+.reader-body .fill-field { break-inside: avoid; }
+.reader-body .nb { white-space: normal; }
+.reader-body math { white-space: nowrap; }
+.reader-body .chapter-marker { display: none; }

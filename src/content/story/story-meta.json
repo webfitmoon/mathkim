@@ -1,0 +1,55 @@
+{
+  "sourceBranch": "feat/story-manuscript",
+  "title": { "ko": "돌아서 간 길", "en": "The Long Way Round" },
+  "author": { "ko": "김성민", "en": "Sungmin Kim" },
+  "episodes": [
+    {
+      "number": 1,
+      "slug": "episode-1",
+      "file": "docs/story/03_ep1_draft.md",
+      "title": "번호판을 읽던 아이",
+      "titleEn": "The Boy Who Read Number Plates",
+      "summaryEn": "A child in Daejeon who read car number plates grows into a student who was always good at math, collapses on middle-school statistics, learns two habits from being wrong, and takes the long way round, through university, the army and a working holiday in the UK, to a scholarship at Trinity College, Cambridge."
+    },
+    {
+      "number": 2,
+      "slug": "episode-2",
+      "file": "docs/story/04_ep2_draft.md",
+      "title": "타고난 사람들 틈에서",
+      "titleEn": "Among People Born for It",
+      "summaryEn": "Cambridge, from a first supervision that exposed a weakness with long open problems, to all-nighters in the CMS library, a First in Part IA, a year's gap before graduation, and one conclusion: what set the very top apart was not talent but method and attitude."
+    },
+    {
+      "number": 3,
+      "slug": "episode-3",
+      "file": "docs/story/05_ep3_draft.md",
+      "title": "다시 수험생이 되던 날",
+      "titleEn": "The Day I Sat the Exam Again",
+      "summaryEn": "Back in Korea and teaching, the author tells no one and sits Yonsei University's essay exam for 2022 entry among teenage candidates, hears of the dentistry offer over jajangmyeon, repeats the proof for pharmacy in 2024, and scores a full 100 in Calculus on the CSAT and in Probability and Statistics and Geometry on the KICE mock exams."
+    },
+    {
+      "number": 4,
+      "slug": "episode-4",
+      "file": "docs/story/06_ep4_draft.md",
+      "title": "조용히 무너지는 자리",
+      "titleEn": "Where Students Quietly Give Way",
+      "summaryEn": "Dawn shuttles to a boarding academy's medical track, live classes in front of a camera, and the three places students quietly give way: attitude, environment, and method. A lesson that ran too fast, the three questions parents keep asking, and why grade-10 and grade-11 students grow the most. The students here are composites."
+    },
+    {
+      "number": 5,
+      "slug": "episode-5",
+      "file": "docs/story/07_ep5_draft.md",
+      "title": "무대에 서기 전에",
+      "titleEn": "Before I Take the Stage",
+      "summaryEn": "A web banner leads to the first MathKorea open selection for mathematics instructors: four rounds, a killer calculus problem taught in front of a panel of more than ten, and a runner-up prize rather than first place. Four years on, the December 2026 launch on Daesung MyMac, a lean team called Trinity MathsLab, and one promise: no exaggeration."
+    },
+    {
+      "number": 6,
+      "slug": "episode-6",
+      "file": "docs/story/08_ep6_draft.md",
+      "title": "방법은 손에 있다",
+      "titleEn": "The Method Is in Your Hands",
+      "summaryEn": "Why the book was written and given away free, one sentence for parents and one for students, a half-joke about ten years from now, and the road back to where it started: a child reading number plates, and a method that lives not in the head but in the hands."
+    }
+  ]
+}

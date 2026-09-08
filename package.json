@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint app src components scripts next.config.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --test-isolation=none scripts/ebooks.test.mjs"
   },
   "dependencies": {
     "next": "16.3.4",
@@ -14,5 +17,13 @@
   },
   "engines": {
     "node": ">=20.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.3.4",
+    "typescript": "^5.9.3"
   }
 }

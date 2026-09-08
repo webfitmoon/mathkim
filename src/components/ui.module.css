@@ -1,0 +1,101 @@
+/* Shared roles, not page-specific colours. Reader roots supply --action-* tokens.
+   Compose these classes into local CSS; keep links as links and buttons as buttons. */
+.action {
+  display: inline-flex;
+  flex-direction: var(--action-direction, row);
+  justify-content: center;
+  align-items: var(--action-align, center);
+  gap: var(--action-gap, var(--ui-space-3));
+  min-height: var(--action-height, var(--ui-control-height));
+  max-width: 100%;
+  padding: var(--action-padding, var(--ui-space-3) var(--ui-space-5));
+  border: 1px solid transparent;
+  border-radius: var(--ui-radius-control);
+  font-size: var(--action-font, var(--ui-body));
+  font-weight: 650;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: color var(--ui-motion) ease, background var(--ui-motion) ease,
+    border-color var(--ui-motion) ease;
+}
+
+.action:focus-visible {
+  outline: var(--ui-focus-width) solid var(--action-color, var(--accent));
+  outline-offset: var(--ui-focus-gap);
+}
+
+.action:active:not(:disabled) { filter: brightness(.92); }
+.action:disabled { opacity: .45; cursor: not-allowed; }
+:global(form[aria-busy="true"]) .action:disabled { cursor: progress; }
+
+.primary {
+  composes: action;
+  color: var(--action-on, var(--surface-raised));
+  background: var(--action-color, var(--accent));
+  border-color: var(--action-color, var(--accent));
+}
+
+.primary:hover:not(:disabled) {
+  background: var(--action-hover, var(--accent-hover));
+  border-color: var(--action-hover, var(--accent-hover));
+}
+
+.secondary {
+  composes: action;
+  color: var(--action-color, var(--accent));
+  background: transparent;
+  border-color: var(--action-border, var(--border));
+}
+
+.secondary:hover:not(:disabled) {
+  background: var(--action-soft, var(--surface-soft));
+  border-color: var(--action-color, var(--accent));
+}
+
+.textAction {
+  composes: action;
+  --action-height: var(--ui-touch-target);
+  --action-padding: 0;
+  color: var(--action-color, var(--accent));
+  background: transparent;
+}
+
+.textAction:hover:not(:disabled) {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.languageToggle {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  color: var(--control-muted, var(--text-muted));
+  font-size: var(--ui-caption);
+}
+
+.languageToggle button {
+  min-height: var(--ui-touch-target);
+  min-width: var(--ui-touch-target);
+  padding: var(--ui-space-1);
+  color: inherit;
+  background: transparent;
+  border: 0;
+  border-radius: var(--ui-radius-control);
+  font-size: var(--ui-caption);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.languageToggle button[aria-pressed="true"] {
+  color: var(--control-text, var(--accent));
+  font-weight: 750;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+.languageToggle button:hover { color: var(--control-text, var(--accent)); }
+
+@media (prefers-reduced-motion: reduce) {
+  .action { transition: none; }
+}

@@ -1,0 +1,469 @@
+/*
+ * Book body styles. The chapter HTML is generated from the book's Typst
+ * source (class names come from book-prose.typ's web overrides), so these
+ * rules are global but scoped under .reader-body. Colours and sizes come from
+ * the tokens set on the reader root in book.module.css.
+ */
+
+.reader-body {
+  font-size: var(--r-size);
+  line-height: var(--r-lh);
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+html[data-locale="en"] .reader-body.lang-en {
+  display: block;
+}
+
+.reader-body p {
+  margin: 0 0 1.15em;
+}
+
+.reader-body strong {
+  font-weight: 700;
+}
+
+.reader-body h2.sec-title {
+  margin: 2.2em 0 0.8em;
+  color: var(--r-accent);
+  font-size: 1.32em;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.reader-body h2.sec-title[data-num]::before {
+  content: attr(data-num) ". ";
+}
+
+.reader-body h3.sub-title {
+  margin: 1.8em 0 0.6em;
+  font-size: 1.08em;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.reader-body ul,
+.reader-body ol {
+  margin: 0 0 1.15em;
+  padding-left: 1.35em;
+}
+
+.reader-body li {
+  margin: 0.3em 0;
+}
+
+.reader-body li > p {
+  margin: 0 0 0.4em;
+}
+
+.reader-body .nb {
+  white-space: nowrap;
+}
+
+.reader-body .chapter-marker {
+  display: none;
+}
+
+/* MathML — rendered natively; math fonts fall back gracefully on phones. */
+.reader-body math {
+  font-family: "STIX Two Math", "Latin Modern Math", "Cambria Math", "Noto Sans Math",
+    "Apple Symbols", serif;
+  font-size: 1.04em;
+}
+
+.reader-body math[display="block"] {
+  display: block;
+  margin: 0.8em 0;
+  overflow-x: auto;
+}
+
+/* Notes and problem statements */
+.reader-body .opening-note {
+  margin: 0.2em 0 1.2em;
+  padding-left: 0.9em;
+  color: var(--r-muted);
+  border-left: 2px solid var(--r-line);
+  font-size: 0.92em;
+}
+
+.reader-body .opening-problem {
+  margin: 0.6em 0 1.3em;
+  padding: 0.9em 1.05em;
+  background: var(--r-panel-2);
+  border: 1px solid var(--r-line);
+  border-radius: 8px;
+  font-size: 0.96em;
+}
+
+.reader-body .career-lead {
+  margin: 0 0 1.4em;
+  padding: 0.6em 0;
+  color: var(--r-muted);
+  border-top: 1px solid var(--r-line);
+  border-bottom: 1px solid var(--r-line);
+  font-size: 0.92em;
+}
+
+.reader-body .noindent {
+  margin: 0 0 1.15em;
+  color: var(--r-muted);
+  font-size: 0.92em;
+}
+
+.reader-body .align-right {
+  margin: 0.5em 0 1.2em;
+  text-align: right;
+}
+
+.reader-body .align-center {
+  text-align: center;
+}
+
+/* Boxes: checklists, Q&A, examples, columns, worksheets */
+.reader-body .box {
+  margin: 1.8em 0;
+  padding: 1.1em 1.15em 1em;
+  background: var(--r-panel);
+  border: 1px solid var(--r-line);
+  border-radius: 10px;
+}
+
+.reader-body .box > :last-child {
+  margin-bottom: 0;
+}
+
+.reader-body .box-kicker {
+  margin: 0 0 0.4em;
+  color: var(--r-kicker);
+  font-family: var(--font-geist-mono);
+  font-size: 0.7em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.reader-body h4.box-title {
+  margin: 0 0 0.7em;
+  color: var(--r-accent);
+  font-size: 1.05em;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.reader-body .box-check {
+  border-color: var(--r-accent);
+}
+
+.reader-body .box-qna {
+  background: var(--r-panel-2);
+  border-left: 3px solid var(--r-accent);
+}
+
+.reader-body .qna-card {
+  margin: 0.6em 0 0;
+  padding: 0.8em 0.9em;
+  background: var(--r-panel);
+  border: 1px solid var(--r-line);
+  border-radius: 8px;
+}
+
+.reader-body .qna-pair + .qna-pair,
+.reader-body .qna-opener + .qna-pair {
+  margin-top: 0.2em;
+}
+
+.reader-body .qa-row {
+  display: grid;
+  grid-template-columns: 1.8em minmax(0, 1fr);
+  gap: 0.3em;
+}
+
+.reader-body .qa-q {
+  margin-bottom: 0.55em;
+}
+
+.reader-body .qa-label {
+  color: var(--r-accent);
+  font-weight: 700;
+}
+
+.reader-body .qa-a .qa-label {
+  color: var(--r-muted);
+}
+
+.reader-body .box-example {
+  border-color: var(--r-amber);
+}
+
+.reader-body .column-note {
+  background: var(--r-panel-2);
+  border-left: 3px solid var(--r-accent);
+}
+
+.reader-body .column-note .box-kicker {
+  color: var(--r-amber);
+}
+
+.reader-body .worksheet {
+  border: 1px dashed var(--r-accent);
+}
+
+.reader-body .worksheet-example {
+  margin: 0.6em 0 0.9em;
+  padding: 0.7em 0.85em;
+  background: var(--r-panel-2);
+  border: 1px solid var(--r-line);
+  border-radius: 8px;
+  font-size: 0.92em;
+}
+
+.reader-body .worksheet-example > :last-child {
+  margin-bottom: 0;
+}
+
+.reader-body .fill-field {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35em 0.6em;
+  align-items: flex-end;
+  margin: 0.55em 0;
+}
+
+.reader-body .fill-label {
+  flex: 0 1 auto;
+  min-width: 0;
+  font-size: 0.95em;
+  font-weight: 700;
+}
+
+.reader-body .fill-blank {
+  flex: 1 1 8em;
+  min-width: 8em;
+  min-height: 1.6em;
+  border-bottom: 1px solid var(--r-muted);
+}
+
+.reader-body .blank-lines {
+  margin: 0.4em 0 0.8em;
+}
+
+.reader-body .blank-line {
+  height: 1.9em;
+  border-bottom: 1px solid var(--r-line);
+}
+
+/* Decoding steps and the two diagrams */
+.reader-body .decode-step {
+  margin: 1.1em 0;
+  padding-left: 1em;
+  border-left: 2px solid var(--r-line);
+}
+
+.reader-body .decode-step-title {
+  margin-bottom: 0.3em;
+  color: var(--r-accent);
+  font-weight: 700;
+}
+
+.reader-body .decode-flow {
+  max-width: 26em;
+  margin: 1.4em auto;
+  padding: 0;
+  list-style: none;
+}
+
+.reader-body .decode-flow li {
+  position: relative;
+  display: grid;
+  gap: 0.15em;
+  margin: 0;
+  padding: 0.7em 0.9em;
+  background: var(--r-panel);
+  border: 1px solid var(--r-accent);
+  border-radius: 8px;
+}
+
+.reader-body .decode-flow li + li {
+  margin-top: 1.25em;
+}
+
+.reader-body .decode-flow li + li::before {
+  content: "↓";
+  position: absolute;
+  top: -1.2em;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--r-accent);
+  font-size: 0.9em;
+  line-height: 1;
+}
+
+.reader-body .df-title {
+  color: var(--r-accent);
+}
+
+.reader-body .df-desc {
+  color: var(--r-muted);
+  font-size: 0.88em;
+}
+
+.reader-body .concept-net {
+  margin: 1.5em 0;
+  padding: 1em 0.8em;
+  background: var(--r-panel);
+  border: 1px solid var(--r-line);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.reader-body .cn-root {
+  display: inline-block;
+  padding: 0.5em 1em;
+  color: #fff;
+  background: var(--r-accent);
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.reader-body .cn-root math {
+  color: #fff;
+}
+
+:root[data-reader-theme="dark"] .reader-body .cn-root,
+:root[data-reader-theme="dark"] .reader-body .cn-root math {
+  color: #0e1115;
+}
+
+.reader-body .cn-branches {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5em;
+  margin: 1.1em 0;
+}
+
+.reader-body .cn-node {
+  padding: 0.6em 0.4em;
+  background: var(--r-panel-2);
+  border: 1px solid var(--r-accent);
+  border-radius: 8px;
+  font-size: 0.86em;
+  line-height: 1.5;
+}
+
+.reader-body .cn-sub {
+  color: var(--r-muted);
+  font-size: 0.85em;
+}
+
+.reader-body .cn-base {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: 1px dashed var(--r-muted);
+  border-radius: 8px;
+  font-size: 0.92em;
+}
+
+/* Appendix: roadmap cards and tables */
+.reader-body .roadmap-preview {
+  margin: 1em 0;
+}
+
+.reader-body .grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.8em;
+}
+
+@media (min-width: 640px) {
+  .reader-body .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.reader-body .roadmap-card {
+  padding: 0.8em 0.9em;
+  background: var(--r-panel);
+  border: 1px solid var(--r-line);
+  border-radius: 8px;
+  font-size: 0.92em;
+}
+
+.reader-body .roadmap-card .box-title {
+  margin-bottom: 0.4em;
+  font-size: 1em;
+}
+
+.reader-body .table-scroll {
+  margin: 1em 0 1.4em;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.reader-body table {
+  min-width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88em;
+  line-height: 1.5;
+}
+
+.reader-body td,
+.reader-body th {
+  min-width: 6.5em;
+  padding: 0.5em 0.6em;
+  border: 1px solid var(--r-line);
+  vertical-align: top;
+}
+
+.reader-body tr:first-child td {
+  background: var(--r-panel-2);
+  font-weight: 700;
+}
+
+.reader-body td p {
+  margin: 0;
+}
+
+/* Glossary */
+.reader-body dl {
+  margin: 0 0 1.2em;
+}
+
+.reader-body dt {
+  margin-top: 1em;
+  color: var(--r-accent);
+  font-weight: 700;
+}
+
+.reader-body dd {
+  margin: 0.25em 0 0;
+}
+
+.reader-body dd > p {
+  margin-bottom: 0.4em;
+}
+
+.reader-body .gloss-caution {
+  margin: 0.35em 0 0.2em;
+  padding: 0.5em 0.7em;
+  background: var(--r-panel-2);
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+
+.reader-body .gloss-caution-label {
+  margin-right: 0.3em;
+  color: var(--r-amber);
+}
+
+/* Long inline equations (wrapped by the export) scroll instead of clipping on phones. */
+.reader-body .math-scroll {
+  display: inline-block;
+  max-width: 100%;
+  padding-bottom: 2px;
+  overflow-x: auto;
+  vertical-align: middle;
+}
+
+.reader-body .math-scroll math {
+  white-space: nowrap;
+}
