@@ -292,10 +292,3 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .logo{display:inline-flex;align-items:center;gap:12px;min-height:44px;color:#1c302c;letter-spacing:normal}
 .logo>span{font:400 32px/1 Georgia,serif;color:#176454}
 .logo>strong{font-family:var(--font);font-size:12px;font-weight:650;letter-spacing:1.2px;line-height:normal}
-
-/* Reassurance follows the student's own problem-solving checkpoints. */
-.mathskim .perspective-reassurance{margin-top:56px;padding:40px;border-left:3px solid var(--brand-orange);background:#fff}
-.mathskim .perspective-reassurance h3{font-size:32px;line-height:1.4}
-.mathskim .perspective-reassurance p{margin-top:20px;color:var(--muted);max-width:72ch}
-.mathskim .perspective-reassurance strong{color:var(--ink);font-weight:650}
-@media(max-width:767px){.mathskim .perspective-reassurance{margin-top:32px;padding:28px 24px}.mathskim .perspective-reassurance h3{font-size:26px}}
