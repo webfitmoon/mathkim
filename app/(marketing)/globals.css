@@ -302,3 +302,22 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .mathskim #programs .course-launch-note>.btn:hover{background:#FFF1EB;border-color:#FFF1EB}
 .mathskim #programs .course-launch-note>.btn:focus-visible{outline:2px solid #fff;outline-offset:4px}
 @media(max-width:767px){.mathskim #programs .course-launch-band{margin-top:28px}.mathskim #programs .course-launch-note{gap:20px;padding-top:24px;padding-bottom:24px}.mathskim #programs .course-launch-note>.btn{width:100%}}
+
+/* Clearly labelled fictional reviews for layout demonstration. */
+.mathskim #reviews.review-demo-section{background:var(--brand-orange);color:#fff;overflow:hidden}
+.review-demo-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:32px;margin-bottom:40px}
+.review-demo-heading .section-head{margin:0;max-width:700px}
+.review-demo-heading .section-head>p{color:#fff}
+.review-demo-heading .label{margin:0 0 16px;font-size:13px;font-weight:700}
+.review-demo-controls{display:flex;gap:10px;flex-shrink:0}
+.review-demo-controls button{min-width:44px;min-height:44px;padding:10px 14px;border:1px solid #FFFFFF88;border-radius:8px;background:transparent;color:#fff;font:inherit;font-size:14px;cursor:pointer}
+.review-demo-controls button:hover{background:#FFFFFF20}
+.review-demo-controls button:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.review-demo-rail{position:relative;display:flex;gap:24px;overflow-x:auto;padding:0 max(24px,calc((100% - 1200px)/2)) 20px;scrollbar-width:thin;scrollbar-color:#FFD9C8 transparent}
+.review-demo-rail:focus-visible{outline:2px solid #fff;outline-offset:-4px}
+.review-demo-card{flex:0 0 350px;min-width:0;min-height:380px;display:flex;flex-direction:column;padding:32px;border-radius:12px;background:#FFF8F3;color:#2A1B15}
+.review-demo-badge{font-size:12px;font-weight:700;color:#A63D1E;margin-bottom:26px}
+.review-demo-card h3{font-size:26px;line-height:1.4;white-space:pre-line}
+.review-demo-body{font-size:16px;line-height:1.8;color:#63534B;margin-top:22px}
+.review-demo-foot{font-size:11px;line-height:1.6;color:#79675C;margin-top:auto;padding-top:28px;border-top:1px solid #EBDCD1}
+@media(max-width:767px){.review-demo-heading{display:block;margin-bottom:28px}.review-demo-controls{margin-top:24px}.review-demo-rail{gap:20px;padding:0 20px 16px}.review-demo-card{flex-basis:min(300px,82vw);padding:28px 24px;min-height:390px}.review-demo-card h3{font-size:24px}}
