@@ -292,3 +292,13 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .logo{display:inline-flex;align-items:center;gap:12px;min-height:44px;color:#1c302c;letter-spacing:normal}
 .logo>span{font:400 32px/1 Georgia,serif;color:#176454}
 .logo>strong{font-family:var(--font);font-size:12px;font-weight:650;letter-spacing:1.2px;line-height:normal}
+
+/* Full-width announcement strip for the regular course launch. */
+.mathskim #programs{padding-bottom:0}
+.mathskim #programs .course-launch-band{margin-top:40px;background:var(--brand-orange);color:#fff}
+.mathskim #programs .course-launch-note{margin-top:0;padding-top:28px;padding-bottom:28px}
+.mathskim #programs .course-launch-note>p{color:#fff;font-size:16px;line-height:1.7;text-wrap:pretty}
+.mathskim #programs .course-launch-note>.btn{background:#fff;border-color:#fff;color:#A63D1E}
+.mathskim #programs .course-launch-note>.btn:hover{background:#FFF1EB;border-color:#FFF1EB}
+.mathskim #programs .course-launch-note>.btn:focus-visible{outline:2px solid #fff;outline-offset:4px}
+@media(max-width:767px){.mathskim #programs .course-launch-band{margin-top:28px}.mathskim #programs .course-launch-note{gap:20px;padding-top:24px;padding-bottom:24px}.mathskim #programs .course-launch-note>.btn{width:100%}}
