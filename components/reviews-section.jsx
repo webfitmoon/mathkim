@@ -45,7 +45,7 @@ export default function ReviewsSection() {
         <div className="review-demo-heading">
           <div className="section-head">
             <p className="label">수강 후기 · DEMO</p>
-            <h2>혼자 문제를 만났을 때,<br />이런 변화를 목표로 합니다.</h2>
+            <h2>수업 이후의 공부 습관,<br />이런 모습을 그립니다.</h2>
             <p>아래 내용은 디자인 확인을 위해 임의로 작성한 데모이며, 실제 수강 후기가 아닙니다.</p>
           </div>
           <div className="review-demo-controls" aria-label="후기 데모 스크롤 제어">
