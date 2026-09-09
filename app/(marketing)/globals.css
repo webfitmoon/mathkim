@@ -279,7 +279,7 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .mathskim #contact .btn.secondary{background:#fff;border-color:#ccc;color:var(--ink)}
 .mathskim .lesson-card{border:1px solid #E6E6E6}
 
-.mathskim .hero .split{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:56px}
+.mathskim .hero .split{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:56px}
 .hero-lecture{min-width:0;width:100%}
 .hero-lecture video{display:block;width:100%;aspect-ratio:16/9;background:#111;border-radius:12px;object-fit:contain}
 .hero-lecture figcaption{margin-top:18px;border-left:3px solid var(--brand-orange);padding-left:14px}
