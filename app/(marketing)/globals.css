@@ -277,7 +277,8 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .mathskim #programs .course-launch-note>.btn:hover{background:#A83F20}
 .mathskim #contact .btn{background:var(--brand-orange);border-color:var(--brand-orange);color:#fff}
 .mathskim #contact .btn.secondary{background:#fff;border-color:#ccc;color:var(--ink)}
-.mathskim .lesson-card{border:1px solid #E6E6E6}
+.mathskim .lesson-card{background:#FFF0E7;border:1px solid #E5AB8E;border-top:4px solid var(--brand-orange)}
+.mathskim .lesson-card:nth-child(2){background:#FFE3D3}
 
 .mathskim .hero .split{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:40px}
 .mathskim .hero-copy{container-type:inline-size;min-width:0}

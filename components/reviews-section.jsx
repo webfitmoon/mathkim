@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 const reviews = [
   { title: "해설을 보기 전에,\n첫 줄부터 써 봐요.", body: "전에는 조금만 막혀도 해설부터 펼쳤어요. 이제는 문제에 주어진 조건을 적고, 어떤 개념과 연결되는지 먼저 생각해 보려고 해요." },
@@ -13,7 +13,7 @@ const reviews = [
 
 export default function ReviewsSection() {
   const rail = useRef(null);
-  const [paused, setPaused] = useState(false);
+  const manualPauseUntil = useRef(0);
   useEffect(() => {
     const node = rail.current;
     const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -23,8 +23,8 @@ export default function ReviewsSection() {
     const tick = (time) => {
       const elapsed = last ? Math.min(time - last, 50) : 0;
       last = time;
-      if (visible && !paused && !motion.matches && !node.matches(":hover") && !node.contains(document.activeElement)) {
-        position += elapsed * 0.028;
+      if (visible && time >= manualPauseUntil.current && !motion.matches && !node.matches(":hover") && !node.contains(document.activeElement)) {
+        position += elapsed * 0.056;
         const repeatStart = node.children[reviews.length].offsetLeft - node.children[0].offsetLeft;
         if (position >= repeatStart) position -= repeatStart;
         node.scrollLeft = position;
@@ -33,9 +33,9 @@ export default function ReviewsSection() {
     };
     frame = requestAnimationFrame(tick);
     return () => { cancelAnimationFrame(frame); observer.disconnect(); };
-  }, [paused]);
+  }, []);
   const move = (direction) => {
-    setPaused(true);
+    manualPauseUntil.current = performance.now() + 1600;
     const node = rail.current;
     node.scrollBy({ left: direction * (node.children[0].offsetWidth + 24), behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
   };
@@ -50,12 +50,11 @@ export default function ReviewsSection() {
           </div>
           <div className="review-demo-controls" aria-label="후기 데모 스크롤 제어">
             <button type="button" onClick={() => move(-1)} aria-label="이전 후기 데모">←</button>
-            <button type="button" onClick={() => setPaused(!paused)} aria-pressed={paused}>{paused ? "자동 재생" : "일시 정지"}</button>
             <button type="button" onClick={() => move(1)} aria-label="다음 후기 데모">→</button>
           </div>
         </div>
       </div>
-      <div className="review-demo-rail" ref={rail} tabIndex={0} aria-label="가상 수강 후기 데모, 좌우로 넘겨 보기" onTouchStart={() => setPaused(true)} onKeyDown={() => setPaused(true)}>
+      <div className="review-demo-rail" ref={rail} tabIndex={0} aria-label="가상 수강 후기 데모, 좌우로 넘겨 보기" onTouchStart={() => { manualPauseUntil.current = Infinity; }} onTouchEnd={() => { manualPauseUntil.current = performance.now() + 1600; }} onTouchCancel={() => { manualPauseUntil.current = performance.now() + 1600; }}>
         {[...reviews, ...reviews].map((review, index) => (
           <article className="review-demo-card" key={index} aria-hidden={index >= reviews.length ? true : undefined}>
             <p className="review-demo-badge">DEMO · 가상 후기 {String(index % reviews.length + 1).padStart(2, "0")}</p>
