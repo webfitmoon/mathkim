@@ -6,7 +6,7 @@ export default function FaqSection() {
       <div className="wrap">
         <div className="section-head">
           <h2>시작 전에 궁금한 점</h2>
-          <p>강좌 선택부터 무료 책 이용, 질문과 답변 확인까지 안내합니다.</p>
+          <p>내 수준에 맞는 수업인지, 무엇부터 시작하면 좋을지 확인해 보세요.</p>
         </div>
         <div className="faq">
           <details>
@@ -16,7 +16,7 @@ export default function FaqSection() {
           </details>
           <details>
             <summary>개념이 부족하거나 중위권에 머물러 있어도 따라갈 수 있나요?</summary>
-            <p>현재 등급만으로 판단하기보다, 어느 개념에서 이해가 끊기고 문제의 어떤 지점에서 막히는지 확인하는 것이 먼저입니다. 개념 설명은 이해하지만 혼자 문제를 시작하기 어렵다면, 문제의 조건에서 어떤 개념을 꺼내야 하는지 살펴보세요.</p>
+            <p>매쓰킴은 개념을 공부했지만 혼자 문제에 적용하기 어려운 중위권 학생에게, 조건과 개념을 연결하는 생각의 순서를 전하고자 합니다. 개념 자체가 낯설다면 해당 개념을 먼저 보완해야 하므로, 등급뿐 아니라 어느 지점에서 막히는지 함께 살펴보는 것이 좋습니다.</p>
             <p>먼저 <Link href="/book/chapter-5?lang=ko">무료 전자책의 추천 장</Link>을 읽고, 이해되지 않은 문장이나 직접 시도한 풀이를 <a href="https://www.mathskim.com/ask?lang=ko">질문 페이지</a>에 남겨 주세요. 정규 강의를 선택할 때는 해당 강좌의 선수 지식과 추천 수준을 확인해 주세요.</p>
           </details>
           <details>
