@@ -1,7 +1,7 @@
 "use client";
 
 export default function InquiryForm() {
-  return <form className="inquiry-form" onSubmit={(event) => event.preventDefault()}>
+  return <form id="inquiry-form" style={{ scrollMarginTop: 100 }} className="inquiry-form" onSubmit={(event) => event.preventDefault()}>
     <div className="inquiry-fields">
       <label>문의 유형 <span>(필수)</span><select name="topic" required defaultValue=""><option value="" disabled>문의 유형을 선택해 주세요</option><option>강의</option><option>교재</option><option>협업</option></select></label>
       <label>이름 <span>(필수)</span><input name="name" autoComplete="name" required maxLength={80} pattern=".*\S.*" /></label>
