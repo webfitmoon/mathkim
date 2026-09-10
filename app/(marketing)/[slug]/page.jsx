@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import SubpageShell, { PageBlock, NextStep } from "../../../components/subpage-shell";
 import ProgramsSection from "../../../components/programs-section";
 import EbooksSection from "../../../components/ebooks-section";
+import InquiryForm from "../../../components/inquiry-form";
 import FaqSection from "../../../components/faq-section";
 
 const pages = {
@@ -10,7 +11,7 @@ const pages = {
   courses: { label: "강의 프로그램", title: "내가 막히는 지점에서 수업을 살펴보세요.", description: "개념을 몰라서인지, 배운 개념을 꺼내지 못해서인지. 현재 공부 상태를 짚어보고 공개된 맛보기 수업으로 설명의 깊이와 속도를 확인하세요." },
   reviews: { label: "수강 후기", title: "수업 이후, 공부의 무엇이 달라졌을까요?", description: "후기를 볼 때는 만족했다는 말보다 어떤 문제에서 막혔고, 혼자 공부하는 행동이 어떻게 달라졌는지 살펴보세요." },
   ebooks: { label: "무료 전자책", title: "수업을 고르기 전, 한 장부터 읽어보세요.", description: "수학을 공부하는 방법과 가르치는 사람의 이야기. 두 권 모두 한국어와 영어로 전문을 공개합니다." },
-  contact: { label: "문의하기", title: "궁금한 내용에 맞게 문의해 주세요.", description: "수강 선택, 교재, 협업 문의와 수학 문제 질문의 경로를 나눴습니다. 필요한 정보를 함께 보내면 질문의 맥락을 파악하는 데 도움이 됩니다." },
+  contact: { label: "문의하기", title: "궁금한 내용에 맞게 문의해 주세요.", description: "강의·교재·협업 중 문의 유형을 선택하고 내용을 남겨 주세요. 필요한 정보를 함께 알려주시면 질문의 맥락을 파악하는 데 도움이 됩니다." },
 };
 export function generateStaticParams() { return Object.keys(pages).map(slug => ({ slug })); }
 export async function generateMetadata({ params }) { const { slug } = await params; const page = Object.hasOwn(pages, slug) ? pages[slug] : null; return page ? { title: `${page.label} | 매쓰킴`, description: page.description } : {}; }
@@ -42,7 +43,8 @@ export default async function Page({ params }) {
       <PageBlock title="온라인으로 읽고, PDF로도 간직하세요."><p>가입 없이 전문을 읽을 수 있습니다. 각 책에서 언어를 선택하거나 PDF를 내려받을 수 있습니다. 읽던 위치는 같은 브라우저에 저장되며, 다른 기기로 자동 동기화되지는 않습니다.</p><div className="subpage-links"><a href="/downloads/mathskim-book-ko.pdf">공부법 한국어 PDF</a><a href="/downloads/mathskim-book-en.pdf">공부법 English PDF</a><a href="/downloads/mathskim-story-ko.pdf">에세이 한국어 PDF</a><a href="/downloads/mathskim-story-en.pdf">에세이 English PDF</a></div><p className="subpage-note">개인이 오프라인에서 읽거나 인쇄하는 용도로 이용해 주세요.</p></PageBlock>
     </>}
     {slug === "contact" && <>
-      <PageBlock title="문의 주제에 맞는 경로를 선택하세요."><div className="subpage-grid">{[["수강·교재 문의", "학년, 공부 중인 과목, 살펴본 맛보기 영상과 궁금한 내용을 알려 주세요. 강좌·교재·수강 경로는 확정된 범위에서 안내합니다.", "mailto:sk851@cantab.ac.uk?subject=매쓰킴%20수강·교재%20문의", "수강·교재 이메일 문의"], ["강의·콘텐츠 협업", "소속, 협업 목적, 요청 범위와 희망 일정을 함께 적어 주세요.", "mailto:sk851@cantab.ac.uk?subject=매쓰킴%20협업%20문의", "협업 이메일 문의"], ["수학 문제·전자책 질문", "문제나 책의 해당 장, 어디까지 생각했는지와 막힌 줄을 함께 남겨 주세요. 공식 질문 페이지에서 접수합니다.", "https://www.mathskim.com/ask?lang=ko", "공식 질문 페이지 열기"]].map(([title, text, href, label]) => <article key={title}><h3>{title}</h3><p>{text}</p><a className="text-link" href={href}>{label}</a></article>)}</div><p className="subpage-note">이메일 버튼은 기기의 메일 앱을 엽니다. 즉시 답변이나 특정 시간 내 답변을 보장하지 않습니다.</p></PageBlock><FaqSection />
+      <PageBlock title="강의·교재·협업 문의"><InquiryForm /></PageBlock>
+      <PageBlock title="수학 문제나 전자책 내용이 궁금하다면." tint><p>공식 질문 페이지에 문제 또는 책의 해당 장, 어디까지 풀었는지와 막힌 줄을 함께 남겨 주세요.</p><a className="text-link" href="https://www.mathskim.com/ask?lang=ko">수학 질문 페이지 열기</a></PageBlock><FaqSection />
     </>}
   </SubpageShell>;
 }

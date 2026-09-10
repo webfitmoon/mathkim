@@ -398,3 +398,13 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
  .check-result { padding: 24px 18px; }
  .study-check legend { font-size: 20px; }
 }
+
+.inquiry-form { max-width: 850px; }
+.inquiry-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; margin: 30px 0; }
+.inquiry-form label { display: block; font-weight: 700; line-height: 1.6; }
+.inquiry-form label span { color: #666; font-size: 14px; font-weight: 400; }
+.inquiry-form input, .inquiry-form select, .inquiry-form textarea { display: block; width: 100%; margin-top: 10px; padding: 14px 16px; border: 1px solid #a9a29d; border-radius: 7px; background: #fff; color: #161616; font: inherit; font-weight: 400; min-height: 50px; }
+.inquiry-form textarea { resize: vertical; }
+.inquiry-form .inquiry-help { font-size: 14px; color: #555; margin: 20px 0; }
+.inquiry-form .btn:disabled { opacity: .55; cursor: not-allowed; }
+@media(max-width:767px) { .inquiry-fields { grid-template-columns: 1fr; gap: 22px; } }
