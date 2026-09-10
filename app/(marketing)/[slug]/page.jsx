@@ -5,7 +5,7 @@ import InquiryForm from "../../../components/inquiry-form";
 
 const pages = {
   about: { label: "강사 소개", description: "중위권에서 상위권으로. 혼자 문제를 풀 수 있는 힘을 가르칩니다." },
-  courses: { label: "프로그램 소개", description: "맛보기 수업을 듣고, 이해하며 따라갈 수 있는지 확인하세요." },
+  courses: { label: "강의 소개", description: "맛보기 수업을 듣고, 이해하며 따라갈 수 있는지 확인하세요." },
   reviews: { label: "수강 후기", description: "학생들의 실제 공부 변화가 담길 공간입니다." },
   ebooks: { label: "무료 전자책", description: "공부법 한 권, 에세이 한 권. 가입 없이 전문을 읽어보세요." },
   contact: { label: "문의하기", description: "강의·교재·협업 중 문의 유형을 선택해 주세요." },
