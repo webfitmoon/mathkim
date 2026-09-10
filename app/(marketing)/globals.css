@@ -451,3 +451,5 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .mathskim #contact.contact-finale .btn:hover { background: #ffe8d9; }
 .mathskim #contact.contact-finale .btn:focus-visible { outline: 3px solid #fff; outline-offset: 6px; }
 @media(max-width:767px) { .mathskim #contact.contact-finale { padding: 72px 0; } .mathskim #contact.contact-finale::before { background-position: 72% center; } .mathskim #contact.contact-finale::after { background: rgba(111,38,19,.76); } .contact-finale .finale-description { font-size: 16px; } }
+
+.mathskim #perspective .section-head h2 + p { margin-top: 28px; line-height: 1.9; }
