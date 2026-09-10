@@ -6,9 +6,9 @@ import CourseGuide from "../../../components/course-guide";
 import InstructorProfile from "../../../components/instructor-profile";
 
 const pages = {
-  about: { bannerPosition: "center 20%", bannerImage: "/media/banner-about.webp", label: "강사 소개", description: "중위권에서 상위권으로. 혼자 문제를 풀 수 있는 힘을 가르칩니다." },
-  courses: { bannerPosition: "center 20%", bannerImage: "/media/banner-courses.webp", label: "강좌 안내", description: "준비 중인 강좌와 교재를 살펴보고, 맛보기 강의로 수업을 만나보세요." },
-  reviews: { bannerImage: "/media/banner-reviews.webp", label: "수강 후기", description: "학생들의 실제 공부 변화가 담길 공간입니다." },
+  about: { bannerPosition: "center 55%", bannerImage: "/media/banner-ebooks.webp", label: "강사 소개", description: "중위권에서 상위권으로. 혼자 문제를 풀 수 있는 힘을 가르칩니다." },
+  courses: { bannerPosition: "center 55%", bannerImage: "/media/banner-reviews.webp", label: "강좌 안내", description: "준비 중인 강좌와 교재를 살펴보고, 맛보기 강의로 수업을 만나보세요." },
+  reviews: { bannerPosition: "center 45%", bannerImage: "/media/student-study-contact.webp", label: "수강 후기", description: "학생들의 실제 공부 변화가 담길 공간입니다." },
   ebooks: { bannerImage: "/media/banner-ebooks.webp", label: "무료 전자책", description: "공부법 한 권, 에세이 한 권. 가입 없이 전문을 읽어보세요." },
   contact: { label: "문의하기", description: "강의·교재·협업 중 문의 유형을 선택해 주세요." },
 };
