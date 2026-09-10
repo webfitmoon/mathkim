@@ -2,10 +2,11 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import SubpageShell from "../../../components/subpage-shell";
 import InquiryForm from "../../../components/inquiry-form";
+import CourseGuide from "../../../components/course-guide";
 
 const pages = {
   about: { label: "강사 소개", description: "중위권에서 상위권으로. 혼자 문제를 풀 수 있는 힘을 가르칩니다." },
-  courses: { label: "강의 소개", description: "맛보기 수업을 듣고, 이해하며 따라갈 수 있는지 확인하세요." },
+  courses: { label: "강좌 안내", description: "준비 중인 강좌와 교재를 살펴보고, 맛보기 강의로 수업을 만나보세요." },
   reviews: { label: "수강 후기", description: "학생들의 실제 공부 변화가 담길 공간입니다." },
   ebooks: { label: "무료 전자책", description: "공부법 한 권, 에세이 한 권. 가입 없이 전문을 읽어보세요." },
   contact: { label: "문의하기", description: "강의·교재·협업 중 문의 유형을 선택해 주세요." },
@@ -29,12 +30,7 @@ export default async function Page({ params }) {
           <div className="simple-actions"><Link className="btn" href="/courses">맛보기 수업 보기</Link><Link className="text-link" href="/story?lang=ko">김성민의 이야기 읽기</Link></div>
         </div><aside className="simple-method" aria-label="수업의 관점"><h3>이해에서 자립까지</h3><p>개념을 이해하고<br />문제의 조건과 연결하고<br />다른 문제에 적용하고<br />혼자 다시 풀어봅니다.</p><Link className="text-link" href="/#method">문제로 수업 방식 확인하기</Link></aside>
       </div>}
-      {slug === "courses" && <>
-        <div className="simple-lessons">
-          <article><p className="label">수학 II · 5분 49초</p><h2>배운 개념을<br />문제에 어떻게 쓸까요?</h2><p>함수의 연속을 판단하는 세 조건을 그래프와 연결합니다.</p><a className="btn" href="/media/lesson-continuity.mp4" target="_blank" rel="noopener noreferrer">맛보기 영상 보기 ↗</a></article>
-          <article><p className="label">문항 해설 · 10분 30초</p><h2>이동거리와 변위,<br />어떻게 구분할까요?</h2><p>이동거리와 변위의 차이로 수능 문제의 보기를 판단하는 과정을 살펴봅니다.</p><a className="btn" href="/media/lesson-distance-displacement.mp4" target="_blank" rel="noopener noreferrer">맛보기 영상 보기 ↗</a></article>
-        </div><div className="simple-launch"><p>정규 강의는 2026년 12월 대성마이맥 론칭 예정입니다.<br /><span>강좌명·교재·수강 경로는 확정 후 안내합니다.</span></p><Link href="/contact">수강 문의하기</Link></div>
-      </>}
+      {slug === "courses" && <CourseGuide />}
       {slug === "reviews" && <div className="simple-empty"><h2>실제 수강 후기를 준비하고 있습니다.</h2><p>공개할 수 있는 실제 후기가 준비되면 안내하겠습니다.<br />지금은 맛보기 강의에서 수업 방식을 확인해 주세요.</p><Link className="btn" href="/courses">맛보기 수업 먼저 보기</Link></div>}
       {slug === "ebooks" && <>
         <div className="simple-books">{[
