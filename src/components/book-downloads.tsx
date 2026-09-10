@@ -15,7 +15,7 @@ export function BookDownloads({ book }: { book: "book" | "story" }) {
           </a>
           <p className={styles.downloadNote}>
             {file.locale === "ko"
-              ? "웹 교정판 전문 · 개인적인 오프라인 읽기와 인쇄용"
+              ? "웹 교정판 전문 · 개인이 오프라인에서 읽거나 인쇄하는 용도"
               : "Complete web edition · For personal offline reading and printing"}
           </p>
         </span>

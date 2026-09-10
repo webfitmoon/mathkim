@@ -2,9 +2,9 @@
   "sources": {
     "scripts/build-book-pdfs.mjs": "1a00dc9ed47974fd3a2587589d38649fec478719ebffefb1c6a720687541a1e8",
     "src/app/book/reader.css": "1d9965d982b270321ed221779ba7f109689a3cd2204d3cbd6423ba533f4f1c16",
-    "src/content/book/book.json": "5bb4b71c0f4ed16105417f58d4d183d3e4689a7ba7806faf060b6d0c88c647ba",
+    "src/content/book/book.json": "a84eb721eb8ee2caa8e83676102dbe05dd38c91fd9b576fc0985702cc743f49c",
     "src/content/pdf/print.css": "95508a304af8f25086c1863d1cbd60565f0fcb8b007d04616e0f1087dd38c7b5",
-    "src/content/story/story.json": "21ef40bd2a0302dc9ce541c87b2c2662816529bc1e6860b6daf440a5fde8e8ac"
+    "src/content/story/story.json": "6c9ed3df593354ade7c9bf636aa53b984b5f9f091a7e8cbd0f2d02ed320e71fa"
   },
   "files": [
     {
@@ -15,8 +15,8 @@
       "href": "/downloads/mathskim-book-ko.pdf",
       "pages": 61,
       "sections": 13,
-      "bytes": 2739617,
-      "sha256": "50a96d229ce79dc749f285da53e6af06884e780a0b477481dcc9314a6d521074"
+      "bytes": 2737514,
+      "sha256": "2f3c0fafa50c7a97aa385f156a886c9d52e105ab4fc8ecb0adde3bb9fb43fea7"
     },
     {
       "book": "book",
@@ -26,8 +26,8 @@
       "href": "/downloads/mathskim-book-en.pdf",
       "pages": 70,
       "sections": 13,
-      "bytes": 1714882,
-      "sha256": "5cc9db2766aff51655226653174bb46450da2240983fba5fde744fa181afef0d"
+      "bytes": 1714814,
+      "sha256": "d5b4099a15f2e38c7d95a0e9d5587154fc4ca735d3d1b90ac7b7fb95e2688237"
     },
     {
       "book": "story",
@@ -37,8 +37,8 @@
       "href": "/downloads/mathskim-story-ko.pdf",
       "pages": 17,
       "sections": 6,
-      "bytes": 565932,
-      "sha256": "481f32af8845df011a0c8c1c021d756d2cd3ae19044514ed431a36df92233eb8"
+      "bytes": 565948,
+      "sha256": "e999300d6229d5d9ecfe5826fd221f0cf023bf3b8c22b732108b715cf207b463"
     },
     {
       "book": "story",
@@ -48,8 +48,8 @@
       "href": "/downloads/mathskim-story-en.pdf",
       "pages": 19,
       "sections": 6,
-      "bytes": 238850,
-      "sha256": "504fc22f08f00651a41c505fcd400ed5979415c9a532cdacd7dcfb5ae937ac3c"
+      "bytes": 238491,
+      "sha256": "706fb3f215e79fb9c7a03351d7936d39be9a9b2862092efb55e65845ab682df6"
     }
   ]
 }
