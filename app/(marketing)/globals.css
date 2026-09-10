@@ -441,3 +441,13 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
  .simple-launch { align-items: start; flex-direction: column; padding: 24px; }
 }
 .mathskim .hero .lead { max-width: none; }
+/* Full-width closing invitation, with the site's own math illustration. */
+.mathskim #contact.contact-finale { position: relative; isolation: isolate; overflow: hidden; padding: 112px 0; color: #fff; background: #8b321b; }
+.mathskim #contact.contact-finale::before { content: ''; position: absolute; inset: 0 0 0 35%; z-index: -2; background: url('/media/changed-conditions.svg') center / cover no-repeat; opacity: .3; mix-blend-mode: screen; }
+.mathskim #contact.contact-finale::after { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg,#8b321b 5%,rgba(139,50,27,.93) 38%,rgba(139,50,27,.4) 100%); }
+.contact-finale h2 { font-size: clamp(32px,4.2vw,56px); line-height: 1.3; max-width: 800px; text-wrap: initial; }
+.contact-finale .finale-description { color: #fff1e8; margin: 28px 0 32px; font-size: 18px; line-height: 1.85; }
+.mathskim #contact.contact-finale .btn { background: #fff; border-color: #fff; color: #8b321b; min-width: 184px; gap: 40px; border-radius: 999px; }
+.mathskim #contact.contact-finale .btn:hover { background: #ffe8d9; }
+.mathskim #contact.contact-finale .btn:focus-visible { outline: 3px solid #fff; outline-offset: 6px; }
+@media(max-width:767px) { .mathskim #contact.contact-finale { padding: 72px 0; } .mathskim #contact.contact-finale::before { inset: 0; opacity: .2; } .contact-finale .finale-description { font-size: 16px; } }
