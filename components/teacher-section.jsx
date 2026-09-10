@@ -1,5 +1,14 @@
 import Link from "next/link";
 
 export default function TeacherSection() {
-  return (<section className="section " id="teacher"><div className="wrap"><div className="section-head"><h2>{"수학을 깊이 공부한 경험을,"}<br />{"학생을 가르치는 일로."}</h2><p>{"매쓰킴 · 수학 강사 김성민"}</p></div><div className="teacher-profile"><figure className="teacher-photo"><img src="/media/kim-sungmin-photo-placeholder.svg" alt="김성민 대표님 사진을 넣을 임시 이미지" width="800" height="1000" loading="lazy" /><figcaption>{"김성민 대표 · 실제 사진으로 교체 예정"}</figcaption></figure><div className="teacher-letter"><p className="statement">{"개념을 아는 중위권에서,"}<br />{"문제를 풀어내는 상위권으로."}</p><p>{"풀이를 따라가는 데서 끝나지 않도록, 문제의 조건을 읽고 배운 개념을 꺼내는 과정을 함께 살펴봅니다."}<br /><br />{"해설을 덮은 뒤에도 스스로 시작할 수 있는 힘. 매쓰킴이 수업에서 길러주고 싶은 실력입니다."}</p><p className="signature">{"김성민 "}<span>{"MATHSKIM"}</span></p><Link className="text-link" href="/story?lang=ko">{"김성민의 이야기를 읽어보세요 ↗"}</Link></div></div></div></section>);
+  return <section className="section" id="teacher"><div className="wrap">
+    <div className="section-head"><h2>답만 알려주기보다,<br />왜 그렇게 푸는지 설명합니다.</h2><p>수학 강사 김성민 · 매쓰킴</p></div>
+    <div className="teacher-profile">
+      <figure className="teacher-photo"><img src="/media/lesson-continuity.jpg" alt="칠판 앞에서 함수의 연속을 설명하는 김성민 강사" width="1280" height="720" style={{ aspectRatio: "16 / 9", height: "auto", objectFit: "contain" }} loading="lazy" /><figcaption>김성민 강사 · 함수의 연속 강의 중</figcaption></figure>
+      <div className="teacher-letter"><p className="statement">정의를 그래프로 확인하고,<br />풀이의 이유를 짚습니다.</p>
+        <p>공개된 연속 강의에서는 함숫값과 극한값을 그래프에서 하나씩 확인합니다. 넓이 문제에서는 두 곡선 사이의 높이를 비교하며 계산을 줄일 수 있는 이유를 설명합니다.<br /><br />수학 공부에 대한 생각은 『수학, 머리로 풀지 마라』에, 가르치는 일을 선택하기까지의 이야기는 에세이 『돌아서 간 길』에 담았습니다.</p>
+        <p className="signature">김성민 <span>MATHSKIM</span></p><Link className="text-link" href="/story?lang=ko">김성민의 이야기를 읽어보세요 ↗</Link>
+      </div>
+    </div>
+  </div></section>;
 }

@@ -5,7 +5,7 @@ import InquiryForm from "../../../components/inquiry-form";
 
 const pages = {
   about: { label: "강사 소개", description: "중위권에서 상위권으로. 혼자 문제를 풀 수 있는 힘을 가르칩니다." },
-  courses: { label: "프로그램 소개", description: "공개된 맛보기 수업으로 설명의 깊이와 속도를 확인하세요." },
+  courses: { label: "프로그램 소개", description: "맛보기 수업을 듣고, 이해하며 따라갈 수 있는지 확인하세요." },
   reviews: { label: "수강 후기", description: "학생들의 실제 공부 변화가 담길 공간입니다." },
   ebooks: { label: "무료 전자책", description: "공부법 한 권, 에세이 한 권. 가입 없이 전문을 읽어보세요." },
   contact: { label: "문의하기", description: "강의·교재·협업 중 문의 유형을 선택해 주세요." },
@@ -31,11 +31,11 @@ export default async function Page({ params }) {
       </div>}
       {slug === "courses" && <>
         <div className="simple-lessons">
-          <article><p className="label">수학 II · 5분 49초</p><h2>배운 개념으로<br />문제의 조건 읽기</h2><p>함수의 연속을 판단하는 세 조건을 그래프와 연결합니다.</p><a className="btn" href="https://drive.google.com/file/d/1fpk09Gt_qe4uUqzGdDswrVsb8_oJI9_K/view" target="_blank" rel="noopener noreferrer">맛보기 영상 보기 ↗</a></article>
-          <article><p className="label">개념 구조 · 36초</p><h2>따로 외운 개념의<br />관계 찾기</h2><p>극한·연속을 미분보다 먼저 배우는 이유를 살펴봅니다.</p><a className="btn" href="https://drive.google.com/file/d/1eya6kA69Nb7dMDmpvdxze-My-ripNncd/view" target="_blank" rel="noopener noreferrer">맛보기 영상 보기 ↗</a></article>
+          <article><p className="label">수학 II · 5분 49초</p><h2>배운 개념을<br />문제에 어떻게 쓸까요?</h2><p>함수의 연속을 판단하는 세 조건을 그래프와 연결합니다.</p><a className="btn" href="/media/lesson-continuity.mp4" target="_blank" rel="noopener noreferrer">맛보기 영상 보기 ↗</a></article>
+          <article><p className="label">개념 구조 · 36초</p><h2>미분 전에 극한·연속을<br />배우는 이유</h2><p>극한·연속을 미분보다 먼저 배우는 이유를 살펴봅니다.</p><a className="btn" href="/media/lesson-concept-structure.mp4" target="_blank" rel="noopener noreferrer">맛보기 영상 보기 ↗</a></article>
         </div><div className="simple-launch"><p>정규 강의는 2026년 12월 대성마이맥 론칭 예정입니다.<br /><span>강좌명·교재·수강 경로는 확정 후 안내합니다.</span></p><Link href="/contact">수강 문의하기</Link></div>
       </>}
-      {slug === "reviews" && <div className="simple-empty"><h2>실제 수강 후기를 준비하고 있습니다.</h2><p>현재 메인의 후기는 디자인 확인용 데모이며,<br />실제 수강생의 경험은 아닙니다.</p><Link className="btn" href="/courses">맛보기 수업 먼저 보기</Link></div>}
+      {slug === "reviews" && <div className="simple-empty"><h2>실제 수강 후기를 준비하고 있습니다.</h2><p>공개할 수 있는 실제 후기가 준비되면 안내하겠습니다.<br />지금은 맛보기 강의에서 수업 방식을 확인해 주세요.</p><Link className="btn" href="/courses">맛보기 수업 먼저 보기</Link></div>}
       {slug === "ebooks" && <>
         <div className="simple-books">{[
           { title: "수학, 머리로 풀지 마라", text: "개념 학습부터 문제에 접근하는 태도까지, 수학 공부법을 돌아봅니다.", image: "book-cover-20260906.png", route: "book" },
