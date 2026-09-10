@@ -2,7 +2,6 @@
 
 export default function InquiryForm() {
   return <form className="inquiry-form" onSubmit={(event) => event.preventDefault()}>
-    <p className="inquiry-help">필수 항목을 작성해 주세요. 강의·교재·협업 문의를 한곳에서 준비할 수 있습니다.</p>
     <div className="inquiry-fields">
       <label>문의 유형 <span>(필수)</span><select name="topic" required defaultValue=""><option value="" disabled>문의 유형을 선택해 주세요</option><option>강의</option><option>교재</option><option>협업</option></select></label>
       <label>이름 <span>(필수)</span><input name="name" autoComplete="name" required maxLength={80} pattern=".*\S.*" /></label>

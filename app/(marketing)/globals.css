@@ -408,3 +408,36 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .inquiry-form .inquiry-help { font-size: 14px; color: #555; margin: 20px 0; }
 .inquiry-form .btn:disabled { opacity: .55; cursor: not-allowed; }
 @media(max-width:767px) { .inquiry-fields { grid-template-columns: 1fr; gap: 22px; } }
+/* Concise menu pages: one introduction and one content area. */
+.mathskim .subpage-intro { padding: 48px 0 40px; background: #fff; border-bottom: 1px solid #e6e1dd; }
+.mathskim .subpage-intro .breadcrumbs { margin-bottom: 24px; font-size: 13px; }
+.mathskim .subpage-intro h1 { font-size: clamp(32px,4vw,48px); }
+.mathskim .subpage-lead { font-size: 17px; margin-top: 16px; }
+.simple-content { padding: 48px 0 64px; min-height: 45vh; }
+.simple-content h2 { font-size: clamp(26px,2.5vw,34px); line-height: 1.4; margin-bottom: 20px; }
+.simple-content p { margin-bottom: 20px; line-height: 1.8; }
+.simple-profile { display: grid; grid-template-columns: 1.35fr 1fr; gap: 64px; align-items: start; }
+.simple-method { padding: 32px; border-left: 3px solid #bc4926; background: #fff3eb; }
+.simple-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 24px; margin-top: 28px; }
+.simple-lessons, .simple-books { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.simple-lessons article { padding: 32px; background: #fff1e7; border-radius: 12px; display: flex; flex-direction: column; align-items: start; }
+.simple-lessons article:nth-child(2) { background: #ffe5d5; }
+.simple-lessons .btn { margin-top: auto; }
+.simple-launch { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 24px 32px; margin-top: 32px; background: #bc4926; color: #fff; border-radius: 8px; }
+.simple-launch p { margin: 0; font-weight: 650; }
+.simple-launch span { font-size: 14px; font-weight: 400; }
+.simple-launch a { white-space: nowrap; font-weight: 700; }
+.simple-empty { max-width: 740px; padding: 32px 0; }
+.simple-books img { width: 100%; height: auto; display: block; border-radius: 10px; margin-bottom: 24px; }
+.simple-books h2 { font-size: 25px; margin-bottom: 12px; }
+.simple-book-links { display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: center; font-size: 14px; }
+.simple-content .simple-footnote { font-size: 14px; color: #666; margin: 32px 0 0; }
+.simple-content .inquiry-fields { margin-top: 0; }
+@media(max-width:767px) {
+ .mathskim .subpage-intro { padding: 28px 0; }
+ .simple-content { padding: 32px 0 48px; }
+ .simple-profile, .simple-lessons, .simple-books { grid-template-columns: 1fr; gap: 32px; }
+ .simple-method, .simple-lessons article { padding: 24px; }
+ .simple-launch { align-items: start; flex-direction: column; padding: 24px; }
+}
+.mathskim .hero .lead { max-width: none; }
