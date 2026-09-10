@@ -12,7 +12,7 @@ export default function FaqSection() {
           <details>
             <summary>언제, 어디에서 수강하고 어떤 강좌부터 시작하면 되나요?</summary>
             <p>정규 강의는 2026년 12월 대성마이맥 론칭을 준비하고 있습니다. 강좌명과 추천 대상, 필요한 선수 개념, 교재와 수강 링크는 확정 후 안내하겠습니다. 강좌가 공개되면 현재 알고 있는 개념과 혼자 풀 때 막히는 부분을 기준으로 수강 대상을 확인해 주세요.</p>
-            <p>지금은 <a href="#ebooks">무료 전자책</a>과 공개된 <a href="#programs">맛보기 영상</a>으로 수업의 관점을 먼저 살펴볼 수 있습니다. 강의 관련 문의는 <a href="mailto:sk851@cantab.ac.uk">이메일</a>로 남겨 주세요.</p>
+            <p>지금은 <Link href="/ebooks">무료 전자책</Link>과 공개된 <Link href="/courses#programs">맛보기 영상</Link>으로 수업의 관점을 먼저 살펴볼 수 있습니다. 강의 관련 문의는 <a href="mailto:sk851@cantab.ac.uk">이메일</a>로 남겨 주세요.</p>
           </details>
           <details>
             <summary>개념이 부족하거나 중위권에 머물러 있어도 따라갈 수 있나요?</summary>
