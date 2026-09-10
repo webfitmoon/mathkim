@@ -11,7 +11,7 @@
   position: absolute;
   inset: 0;
   z-index: -2;
-  background: url("/media/student-study-contact.webp") center 55% / cover no-repeat;
+  background: var(--banner-image) var(--banner-position, center 55%) / cover no-repeat;
 }
 .banner::after {
   content: "";
@@ -20,16 +20,6 @@
   z-index: -1;
   background: linear-gradient(90deg, rgba(111,38,19,.98) 0%, rgba(125,44,23,.9) 38%, rgba(125,44,23,.22) 100%);
 }
-.breadcrumbs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 32px;
-  color: #fff1e8;
-  font-size: 13px;
-}
-.breadcrumbs a { text-decoration: underline; text-underline-offset: 4px; }
-.breadcrumbs a:focus-visible { outline: 2px solid #fff; outline-offset: 5px; }
 .banner h1 {
   max-width: 740px;
   margin: 0;
@@ -50,6 +40,5 @@
   .banner { padding: 36px 0 48px; }
   .banner::before { background-position: 72% center; }
   .banner::after { background: rgba(111,38,19,.76); }
-  .breadcrumbs { margin-bottom: 24px; }
   .lead { margin-top: 20px; font-size: 16px; }
 }
