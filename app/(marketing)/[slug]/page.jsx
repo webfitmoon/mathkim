@@ -32,7 +32,7 @@ export default async function Page({ params }) {
       {slug === "courses" && <>
         <div className="simple-lessons">
           <article><p className="label">수학 II · 5분 49초</p><h2>배운 개념을<br />문제에 어떻게 쓸까요?</h2><p>함수의 연속을 판단하는 세 조건을 그래프와 연결합니다.</p><a className="btn" href="/media/lesson-continuity.mp4" target="_blank" rel="noopener noreferrer">맛보기 영상 보기 ↗</a></article>
-          <article><p className="label">개념 구조 · 36초</p><h2>미분 전에 극한·연속을<br />배우는 이유</h2><p>극한·연속을 미분보다 먼저 배우는 이유를 살펴봅니다.</p><a className="btn" href="/media/lesson-concept-structure.mp4" target="_blank" rel="noopener noreferrer">맛보기 영상 보기 ↗</a></article>
+          <article><p className="label">문항 해설 · 10분 30초</p><h2>이동거리와 변위,<br />어떻게 구분할까요?</h2><p>이동거리와 변위의 차이로 수능 문제의 보기를 판단하는 과정을 살펴봅니다.</p><a className="btn" href="/media/lesson-distance-displacement.mp4" target="_blank" rel="noopener noreferrer">맛보기 영상 보기 ↗</a></article>
         </div><div className="simple-launch"><p>정규 강의는 2026년 12월 대성마이맥 론칭 예정입니다.<br /><span>강좌명·교재·수강 경로는 확정 후 안내합니다.</span></p><Link href="/contact">수강 문의하기</Link></div>
       </>}
       {slug === "reviews" && <div className="simple-empty"><h2>실제 수강 후기를 준비하고 있습니다.</h2><p>공개할 수 있는 실제 후기가 준비되면 안내하겠습니다.<br />지금은 맛보기 강의에서 수업 방식을 확인해 주세요.</p><Link className="btn" href="/courses">맛보기 수업 먼저 보기</Link></div>}
