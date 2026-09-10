@@ -4,6 +4,7 @@ import SubpageShell from "../../../components/subpage-shell";
 import InquiryForm from "../../../components/inquiry-form";
 import CourseGuide from "../../../components/course-guide";
 import InstructorProfile from "../../../components/instructor-profile";
+import ReviewsList from "../../../components/reviews-list";
 
 const pages = {
   about: { bannerPosition: "center 55%", bannerImage: "/media/banner-ebooks.webp", label: "강사 소개", description: "중위권에서 상위권으로. 혼자 문제를 풀 수 있는 힘을 가르칩니다." },
@@ -26,7 +27,7 @@ export default async function Page({ params }) {
     <section className="simple-content"><div className="wrap">
       {slug === "about" && <InstructorProfile />}
       {slug === "courses" && <CourseGuide />}
-      {slug === "reviews" && <div className="simple-empty"><h2>실제 수강 후기를 준비하고 있습니다.</h2><p>공개할 수 있는 실제 후기가 준비되면 안내하겠습니다.<br />지금은 맛보기 강의에서 수업 방식을 확인해 주세요.</p><Link className="btn" href="/courses">맛보기 수업 먼저 보기</Link></div>}
+      {slug === "reviews" && <ReviewsList />}
       {slug === "ebooks" && <>
         <div className="simple-books">{[
           { title: "수학, 머리로 풀지 마라", text: "개념 학습부터 문제에 접근하는 태도까지, 수학 공부법을 돌아봅니다.", image: "book-cover-20260906.png", route: "book" },
