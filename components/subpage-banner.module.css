@@ -42,3 +42,22 @@
   .banner::after { background: rgba(111,38,19,.76); }
   .lead { margin-top: 20px; font-size: 16px; }
 }
+
+.plainHeader {
+  padding: 64px 0 32px;
+  text-align: center;
+  background: #fff;
+  color: var(--ink);
+}
+.plainHeader h1 {
+  margin: 0 auto;
+  font-size: clamp(36px, 4.2vw, 56px);
+  line-height: 1.3;
+}
+.plainHeader .lead {
+  margin: 10px auto 0;
+  color: var(--muted);
+}
+@media (max-width: 767px) {
+  .plainHeader { padding: 40px 0 24px; }
+}
