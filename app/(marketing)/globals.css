@@ -453,3 +453,13 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 @media(max-width:767px) { .mathskim #contact.contact-finale { padding: 72px 0; } .mathskim #contact.contact-finale::before { background-position: 72% center; } .mathskim #contact.contact-finale::after { background: rgba(111,38,19,.76); } .contact-finale .finale-description { font-size: 16px; } }
 
 .mathskim #perspective .section-head h2 + p { margin-top: 28px; line-height: 1.9; }
+/* Four learning stages in the Mathskim accent colour. */
+.mathskim #method .steps { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 20px; padding: 0; list-style: none; }
+.mathskim #method .steps li { display: flex; flex-direction: column; align-items: flex-start; gap: 0; padding: 28px 24px; border: 0; border-radius: 12px; background: var(--brand-orange); color: #fff; }
+.mathskim #method .steps b { color: #fff; opacity: .8; padding: 0; font-size: 14px; margin-bottom: 24px; }
+.mathskim #method .steps .heading-with-icon { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; color: #fff; margin: 0; }
+.mathskim #method .steps .icon-marker { display: inline-flex; color: #fff; background: transparent; border: 0; padding: 0; width: 40px; height: 40px; }
+.mathskim #method .steps .content-icon { width: 36px; height: 36px; color: #fff; stroke: currentColor; }
+.mathskim #method .steps p { color: #fff; margin: 16px 0 0; font-size: 16px; line-height: 1.8; }
+@media(max-width:1023px) { .mathskim #method .steps { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media(max-width:599px) { .mathskim #method .steps { grid-template-columns: 1fr; gap: 16px; } .mathskim #method .steps li { padding: 24px; } .mathskim #method .steps b { margin-bottom: 16px; } .mathskim #method .steps .heading-with-icon { flex-direction: row; align-items: center; } }
