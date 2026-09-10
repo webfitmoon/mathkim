@@ -1,0 +1,16 @@
+.profile { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: 56px; align-items: start; }
+.introduction h2 { margin: 0 0 24px; font-size: clamp(28px, 3.5vw, 42px); line-height: 1.35; }
+.introduction > p { margin-bottom: 24px; line-height: 1.9; word-break: keep-all; overflow-wrap: anywhere; }
+.introduction blockquote { margin: 32px 0; padding: 8px 0 8px 24px; border-left: 4px solid #bc4926; color: #9b371c; font-size: clamp(21px, 2vw, 27px); font-weight: 700; line-height: 1.6; word-break: keep-all; }
+.introduction .coach { font-size: 15px; color: #62554e; }
+.facts { margin: 0; padding: 8px 28px; border-radius: 12px; background: #fff1e7; }
+.facts > div { padding: 24px 0; }
+.facts > div + div { border-top: 1px solid #e5caba; }
+.facts dt { margin-bottom: 12px; color: #9b371c; font-size: 16px; font-weight: 700; }
+.facts dd { margin: 0; line-height: 1.85; word-break: keep-all; overflow-wrap: anywhere; }
+.facts dd + dd { margin-top: 12px; }
+@media (max-width: 767px) {
+  .profile { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .facts { padding: 0 24px; }
+  .introduction blockquote { padding-left: 18px; }
+}

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import SubpageShell from "../../../components/subpage-shell";
 import InquiryForm from "../../../components/inquiry-form";
 import CourseGuide from "../../../components/course-guide";
+import InstructorProfile from "../../../components/instructor-profile";
 
 const pages = {
   about: { label: "강사 소개", description: "중위권에서 상위권으로. 혼자 문제를 풀 수 있는 힘을 가르칩니다." },
@@ -23,13 +24,7 @@ export default async function Page({ params }) {
   if (!page) notFound();
   return <SubpageShell {...page} title={page.label}>
     <section className="simple-content"><div className="wrap">
-      {slug === "about" && <div className="simple-profile">
-        <div><p className="label">수학 강사</p><h2>김성민, 매쓰킴.</h2>
-          <p>개념을 아는 것에서, 문제에 적용하는 것으로.<br />조건을 읽고 풀이의 첫 줄을 정하는 생각의 순서를 전합니다.</p>
-          <p>대전에서 케임브리지로, 다시 교실로 이어진 이야기는<br />직접 쓴 에세이 『돌아서 간 길』에 담았습니다.</p>
-          <div className="simple-actions"><Link className="btn" href="/courses">맛보기 수업 보기</Link><Link className="text-link" href="/story?lang=ko">김성민의 이야기 읽기</Link></div>
-        </div><aside className="simple-method" aria-label="수업의 관점"><h3>이해에서 자립까지</h3><p>개념을 이해하고<br />문제의 조건과 연결하고<br />다른 문제에 적용하고<br />혼자 다시 풀어봅니다.</p><Link className="text-link" href="/#method">문제로 수업 방식 확인하기</Link></aside>
-      </div>}
+      {slug === "about" && <InstructorProfile />}
       {slug === "courses" && <CourseGuide />}
       {slug === "reviews" && <div className="simple-empty"><h2>실제 수강 후기를 준비하고 있습니다.</h2><p>공개할 수 있는 실제 후기가 준비되면 안내하겠습니다.<br />지금은 맛보기 강의에서 수업 방식을 확인해 주세요.</p><Link className="btn" href="/courses">맛보기 수업 먼저 보기</Link></div>}
       {slug === "ebooks" && <>
