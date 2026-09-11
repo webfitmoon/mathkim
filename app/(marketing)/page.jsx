@@ -7,6 +7,7 @@ import TeacherSection from "../../components/teacher-section";
 import EbooksSection from "../../components/ebooks-section";
 import FaqSection from "../../components/faq-section";
 import ContactSection from "../../components/contact-section";
+import LegalLinks from "../../components/legal-links";
 
 export default function HomePage() {
   return <>
@@ -20,6 +21,6 @@ export default function HomePage() {
 <EbooksSection />
 <FaqSection />
 <ContactSection /></main>
-    <footer className="footer"><div className="wrap"><strong>{"매쓰킴"}</strong><p>{"© 2026 매쓰킴"}</p></div></footer>
+    <footer className="footer"><div className="wrap"><strong>{"매쓰킴"}</strong><p>{"© 2026 매쓰킴"}</p><LegalLinks /></div></footer>
   </>;
 }

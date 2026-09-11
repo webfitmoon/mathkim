@@ -41,6 +41,8 @@ export const metadata: Metadata = {
  * /story shares the /book reader shell: same tokens, top bar, reader
  * controls, and body styles (reader.css), so the two read as one product.
  */
+import LegalLinks from "../../../components/legal-links";
+
 export default function StoryLayout({
   children,
 }: Readonly<{
@@ -96,6 +98,7 @@ export default function StoryLayout({
           </Link>
           <Link href="/">mathskim</Link>
         </p>
+        <LegalLinks />
       </footer>
     </div>
   );

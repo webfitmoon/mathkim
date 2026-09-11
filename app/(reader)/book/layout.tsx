@@ -38,6 +38,8 @@ export const metadata: Metadata = {
   },
 };
 
+import LegalLinks from "../../../components/legal-links";
+
 export default function BookLayout({
   children,
 }: Readonly<{
@@ -90,6 +92,7 @@ export default function BookLayout({
           </Link>
           <Link href="/">mathskim</Link>
         </p>
+        <LegalLinks />
       </footer>
     </div>
   );
