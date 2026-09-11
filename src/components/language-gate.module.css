@@ -5,7 +5,7 @@
   display: grid;
   place-items: center;
   padding: 20px;
-  background: rgba(231, 239, 233, 0.88);
+  background: rgba(255, 240, 231, 0.88);
   backdrop-filter: blur(10px);
 }
 
@@ -16,7 +16,7 @@
   background: var(--surface-raised);
   border: 1px solid var(--border);
   border-radius: 6px;
-  box-shadow: 0 20px 60px rgb(28 48 44 / 12%);
+  box-shadow: 0 20px 60px rgb(63 33 20 / 12%);
   text-align: center;
   animation: gate-in 220ms ease-out;
 }

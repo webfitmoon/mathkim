@@ -1,15 +1,15 @@
 :root {
   color-scheme: light;
-  --surface: #f8faf8;
+  --surface: #fffaf7;
   --surface-raised: #ffffff;
-  --surface-soft: #eaf1ed;
-  --text: #1c302c;
-  --text-muted: #576962;
-  --border: #d2ded7;
-  --accent: #176454;
-  --accent-hover: #104b3f;
+  --surface-soft: #fff0e7;
+  --text: #251d19;
+  --text-muted: #6b5b52;
+  --border: #e5d6ce;
+  --accent: #b94324;
+  --accent-hover: #963319;
   --error: #a72c28;
-  --field-border: #7a9083;
+  --field-border: #9a7c6c;
   /* Shared UI scale. Editorial headings and reader prose keep their own scale. */
   --ui-caption: 12px;
   --ui-label: 13px;
