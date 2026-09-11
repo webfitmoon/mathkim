@@ -8,6 +8,7 @@ import EbooksSection from "../../components/ebooks-section";
 import FaqSection from "../../components/faq-section";
 import ContactSection from "../../components/contact-section";
 import LegalLinks from "../../components/legal-links";
+import Link from "next/link";
 
 export default function HomePage() {
   return <>
@@ -21,6 +22,6 @@ export default function HomePage() {
 <EbooksSection />
 <FaqSection />
 <ContactSection /></main>
-    <footer className="footer"><div className="wrap"><strong>{"매쓰킴"}</strong><p>{"© 2026 매쓰킴"}</p><LegalLinks /></div></footer>
+    <footer className="footer"><div className="wrap"><Link href="/" className="logo" aria-label="매쓰킴 메인"><span aria-hidden="true" style={{ color: "var(--brand-orange)" }}>∫</span><strong>MATHSKIM</strong></Link><p>{"© 2026 매쓰킴"}</p><LegalLinks /></div></footer>
   </>;
 }
