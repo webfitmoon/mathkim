@@ -33,7 +33,6 @@ export default async function Page({ params }) {
           { title: "수학, 머리로 풀지 마라", text: "개념 학습부터 문제에 접근하는 태도까지, 수학 공부법을 돌아봅니다.", image: "book-cover-20260906.png", route: "book" },
           { title: "돌아서 간 길", text: "대전에서 케임브리지로, 다시 교실로. 김성민의 배움과 가르침에 관한 에세이.", image: "story-cover-20260906.png", route: "story" },
         ].map(book => <article key={book.route}><Link href={`/${book.route}?lang=ko`}><img src={`/media/${book.image}`} alt={`${book.title} 표지`} width="1200" height="630" /></Link><h2>{book.title}</h2><p>{book.text}</p><div className="simple-book-links"><Link className="text-link" href={`/${book.route}?lang=ko`}>무료로 읽기</Link></div></article>)}</div>
-        <p className="simple-footnote">두 책 모두 한국어·영어 전문을 제공합니다.</p>
       </>}
       {slug === "contact" && <><InquiryForm /><p className="simple-footnote">수학 문제·전자책 내용에 관한 질문은 <a href="https://www.mathskim.com/ask?lang=ko">공식 질문 페이지</a>를 이용해 주세요.</p></>}
     </div></section>
