@@ -4,6 +4,7 @@ import PerspectiveSection from "../../components/perspective-section";
 import MethodSection from "../../components/method-section";
 import ProgramsSection from "../../components/programs-section";
 import TeacherSection from "../../components/teacher-section";
+import ReviewsSection from "../../components/reviews-section";
 import EbooksSection from "../../components/ebooks-section";
 import FaqSection from "../../components/faq-section";
 import ContactSection from "../../components/contact-section";
@@ -19,6 +20,7 @@ export default function HomePage() {
 <MethodSection />
 <ProgramsSection />
 <TeacherSection />
+<ReviewsSection />
 <EbooksSection />
 <FaqSection />
 <ContactSection /></main>
