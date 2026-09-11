@@ -9,6 +9,7 @@ export default function InquiryForm() {
       <label>학년 또는 소속 <span>(선택)</span><input name="context" maxLength={120} placeholder="예: 고2 학생 / 학부모 / 회사·기관명" /></label>
     </div>
     <label>문의 내용 <span>(필수)</span><textarea name="message" required minLength={10} maxLength={2000} rows={7} placeholder="강의·교재: 공부 중인 과목과 궁금한 점을 적어 주세요. 협업: 목적, 요청 범위, 희망 일정을 알려 주세요." /></label>
+    <label className="inquiry-consent"><input type="checkbox" name="privacyConsent" required />개인정보 수집·이용에 동의합니다. <span>(필수)</span></label>
     <p className="inquiry-help">현재 문의 접수 기능을 준비 중입니다. 입력한 내용은 저장되거나 전송되지 않습니다.</p>
     <button className="btn" type="submit" disabled>문의 보내기 · 연결 준비 중</button>
   </form>;

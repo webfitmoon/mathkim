@@ -34,7 +34,7 @@ export default async function Page({ params }) {
           { title: "돌아서 간 길", text: "대전에서 케임브리지로, 다시 교실로. 김성민의 배움과 가르침에 관한 에세이.", image: "story-cover-20260906.png", route: "story" },
         ].map(book => <article key={book.route}><Link href={`/${book.route}?lang=ko`}><img src={`/media/${book.image}`} alt={`${book.title} 표지`} width="1200" height="630" /></Link><h2>{book.title}</h2><p>{book.text}</p><div className="simple-book-links"><Link className="text-link" href={`/${book.route}?lang=ko`}>무료로 읽기</Link></div></article>)}</div>
       </>}
-      {slug === "contact" && <><InquiryForm /><p className="simple-footnote">수학 문제·전자책 내용에 관한 질문은 <a href="https://www.mathskim.com/ask?lang=ko">공식 질문 페이지</a>를 이용해 주세요.</p></>}
+      {slug === "contact" && <InquiryForm />}
     </div></section>
   </SubpageShell>;
 }

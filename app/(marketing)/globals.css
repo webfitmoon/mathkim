@@ -405,6 +405,8 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .inquiry-form label span { color: #666; font-size: 14px; font-weight: 400; }
 .inquiry-form input, .inquiry-form select, .inquiry-form textarea { display: block; width: 100%; margin-top: 10px; padding: 14px 16px; border: 1px solid #a9a29d; border-radius: 7px; background: #fff; color: #161616; font: inherit; font-weight: 400; min-height: 50px; }
 .inquiry-form textarea { resize: vertical; }
+.inquiry-form .inquiry-consent { display: flex; align-items: center; gap: 8px; margin-top: 24px; min-height: 44px; font-size: 14px; flex-wrap: wrap; }
+.inquiry-form .inquiry-consent input { width: 20px; height: 20px; min-height: 20px; margin: 0; padding: 0; flex: 0 0 20px; accent-color: var(--brand-orange); }
 .inquiry-form .inquiry-help { font-size: 14px; color: #555; margin: 20px 0; }
 .inquiry-form .btn:disabled { opacity: .55; cursor: not-allowed; }
 @media(max-width:767px) { .inquiry-fields { grid-template-columns: 1fr; gap: 22px; } }
