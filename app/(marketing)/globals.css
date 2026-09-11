@@ -351,6 +351,7 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .subpage { --page-accent: #bc4926; --page-tint: #fff1e7; }
 .trinity .subpage { --page-accent: #246533; --page-tint: #edf7ed; }
 .nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 7px; }
+.nav a.btn, .nav a.btn:hover, .nav a.btn[aria-current="page"] { text-decoration: none; }
 .subpage-intro { padding: 130px 0 72px; background: var(--page-tint); }
 .subpage-intro h1 { font-size: clamp(36px, 4.5vw, 64px); line-height: 1.2; letter-spacing: -.045em; max-width: 1000px; word-break: keep-all; }
 .subpage-lead { max-width: 740px; font-size: 19px; line-height: 1.85; margin-top: 28px; word-break: keep-all; }
