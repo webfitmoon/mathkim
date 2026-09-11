@@ -426,6 +426,7 @@ h3+p,.line h3+p,.steps h3+p,.book-row h3+p{margin-top:10px}.section-head h2+p{ma
 .mathskim .subpage-intro h1 { font-size: clamp(32px,4vw,48px); }
 .mathskim .subpage-lead { font-size: 17px; margin-top: 16px; }
 .simple-content { padding: 48px 0 64px; min-height: 45vh; }
+.mathskim .subpage #programs { background: #fff; }
 .simple-content h2 { font-size: clamp(26px,2.5vw,34px); line-height: 1.4; margin-bottom: 20px; }
 .simple-content p { margin-bottom: 20px; line-height: 1.8; }
 .simple-profile { display: grid; grid-template-columns: 1.35fr 1fr; gap: 64px; align-items: start; }
