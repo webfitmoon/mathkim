@@ -3,16 +3,18 @@
 .introduction > p { margin-bottom: 24px; line-height: 1.9; word-break: keep-all; overflow-wrap: anywhere; }
 .introduction blockquote { margin: 32px 0; padding: 8px 0 8px 24px; border-left: 4px solid #bc4926; color: #9b371c; font-size: clamp(21px, 2vw, 27px); font-weight: 700; line-height: 1.6; word-break: keep-all; }
 .introduction .coach { font-size: 15px; color: #62554e; }
-.facts { margin: 0; padding: 0; }
-.facts > div { padding: 0; }
-.facts > div + div { margin-top: 24px; }
-.facts dt { margin-bottom: 10px; color: var(--ink); font-size: 16px; font-weight: 700; }
+.credentials { margin-top: 64px; padding-top: 40px; border-top: 1px solid #eaded7; }
+.facts { display: grid; grid-template-columns: 1fr 1fr 1.2fr; gap: 40px; margin: 0; padding: 0; }
+.facts > div { padding: 0; min-width: 0; }
+.facts dt { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; color: var(--ink); font-size: 20px; font-weight: 700; }
+.facts dt svg { width: 28px; height: 28px; flex: 0 0 28px; fill: none; stroke: var(--brand-orange); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 .facts dd { margin: 0; line-height: 1.85; word-break: keep-all; overflow-wrap: anywhere; }
 .facts ul { margin: 0; padding-left: 20px; }
 .facts li + li { margin-top: 6px; }
 @media (max-width: 767px) {
   .profile { grid-template-columns: minmax(0, 1fr); gap: 32px; }
-  .facts { padding: 0; }
+  .credentials { margin-top: 40px; padding-top: 32px; }
+  .facts { grid-template-columns: 1fr; gap: 32px; }
   .introduction blockquote { padding-left: 18px; }
 }
 
@@ -22,7 +24,6 @@
 .portrait p { color: #9b371c; font-size: 13px; }
 .portrait strong { display: block; margin-top: 8px; font-size: 30px; }
 .portrait span { display: block; margin-top: 12px; font-size: 12px; color: var(--muted); }
-.introduction .facts { margin-top: 32px; }
 .activities { margin-top: 80px; padding-top: 56px; border-top: 1px solid #eaded7; }
 .activities > h2 { font-size: clamp(28px, 3vw, 38px); }
 .activities > p { margin-top: 10px; color: var(--muted); }

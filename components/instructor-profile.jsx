@@ -16,13 +16,15 @@ export default function InstructorProfile() {
       <p>그곳에서도 막히는 순간은 있었습니다. 답을 구하는 데 익숙했던 저는 풀이의 이유를 끝까지 글로 설명하는 일이 서툴렀습니다. 정의를 정확히 이해하고, 문제에 적용하고, 다시 풀어 보는 과정을 거쳤습니다. 지금 교실에서도 학생들과 그 과정을 함께하려고 합니다. 제 설명을 이해하는 데서 그치지 않고, 혼자 문제 앞에 앉았을 때 무엇부터 해 볼지 알 수 있도록 가르치고 싶습니다.</p>
       <blockquote>“문제를 푸는 기술보다,<br />수학을 바라보는 눈을 남기고 싶습니다.”</blockquote>
       <div className="simple-actions"><Link className="btn" href="/courses">강좌 안내 보기</Link><Link className="text-link" href="/story?lang=ko">김성민의 이야기 읽기</Link></div>
-    <dl className={styles.facts}>
-      <div><dt>학력</dt><dd><ul><li>Trinity College, Cambridge</li><li>Mathematical Tripos BA · Cambridge MA</li></ul></dd></div>
-      <div><dt>경력</dt><dd><ul><li>대성학원 재종 근무</li><li>2026년 12월 대성마이맥 런칭 예정</li></ul></dd></div>
-      <div><dt>런칭 과목</dt><dd><ul><li>공통수학1, 공통수학2, 대수, 미적분Ⅰ, 확률과 통계</li><li>교재 『트리니티 에센스』(개념서), 『트리니티 타겟』(개념서 워크북)</li></ul></dd></div>
-    </dl>
     </div>
   </div>
+  <section className={styles.credentials} aria-label="학력, 경력 및 런칭 과목">
+    <dl className={styles.facts}>
+      <div><dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5L2 9Z" /><path d="M6 11v6c3 3 9 3 12 0v-6M22 9v7" /></svg>학력</dt><dd><ul><li>Trinity College, Cambridge</li><li>Mathematical Tripos BA · Cambridge MA</li></ul></dd></div>
+      <div><dt><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="14" rx="2" /><path d="M8 7V3h8v4M3 12a22 22 0 0 0 18 0M12 11v4" /></svg>경력</dt><dd><ul><li>대성학원 재종 근무</li><li>2026년 12월 대성마이맥 런칭 예정</li></ul></dd></div>
+      <div><dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5c-3-2-6-2-10-1v15c4-1 7-1 10 1 3-2 6-2 10-1V4c-4-1-7-1-10 1Zm0 0v15" /></svg>런칭 과목</dt><dd><ul><li>공통수학1, 공통수학2, 대수, 미적분Ⅰ, 확률과 통계</li><li>교재 『트리니티 에센스』(개념서), 『트리니티 타겟』(개념서 워크북)</li></ul></dd></div>
+    </dl>
+  </section>
   <section className={styles.activities} aria-labelledby="instructor-activities-title">
     <h2 id="instructor-activities-title">강사님 활동 내역</h2>
     <p>강의 현장과 교재 연구, 교육 활동을 사진으로 전할 공간입니다. 현재는 배치 확인용 데모 이미지입니다.</p>
