@@ -3,18 +3,19 @@
 .introduction > p { margin-bottom: 24px; line-height: 1.9; word-break: keep-all; overflow-wrap: anywhere; }
 .introduction blockquote { margin: 32px 0; padding: 8px 0 8px 24px; border-left: 4px solid #bc4926; color: #9b371c; font-size: clamp(21px, 2vw, 27px); font-weight: 700; line-height: 1.6; word-break: keep-all; }
 .introduction .coach { font-size: 15px; color: #62554e; }
-.credentials { margin-top: 64px; padding-top: 40px; border-top: 1px solid #eaded7; }
-.facts { display: grid; grid-template-columns: 1fr 1fr 1.2fr; gap: 40px; margin: 0; padding: 0; }
-.facts > div { padding: 0; min-width: 0; }
-.facts dt { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; color: var(--ink); font-size: 20px; font-weight: 700; }
-.facts dt svg { width: 28px; height: 28px; flex: 0 0 28px; fill: none; stroke: var(--brand-orange); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
-.facts dd { margin: 0; line-height: 1.85; word-break: keep-all; overflow-wrap: anywhere; }
+.credentials { margin-top: 64px; }
+.facts { display: grid; grid-template-columns: 1fr 1fr 1.2fr; gap: 20px; margin: 0; padding: 0; }
+.facts > div { padding: 28px; min-width: 0; background: var(--brand-orange); border-radius: 12px; }
+.facts dt { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; color: #fff; font-size: 20px; font-weight: 700; }
+.facts dt svg { width: 28px; height: 28px; flex: 0 0 28px; fill: none; stroke: #fff; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.facts dd { margin: 0; color: #fff8f4; line-height: 1.85; word-break: keep-all; overflow-wrap: anywhere; }
 .facts ul { margin: 0; padding-left: 20px; }
 .facts li + li { margin-top: 6px; }
 @media (max-width: 767px) {
   .profile { grid-template-columns: minmax(0, 1fr); gap: 32px; }
-  .credentials { margin-top: 40px; padding-top: 32px; }
-  .facts { grid-template-columns: 1fr; gap: 32px; }
+  .credentials { margin-top: 40px; }
+  .facts { grid-template-columns: 1fr; gap: 16px; }
+  .facts > div { padding: 24px; }
   .introduction blockquote { padding-left: 18px; }
 }
 
