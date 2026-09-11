@@ -13,6 +13,6 @@ export default function InquiryForm() {
     <label className="inquiry-consent"><input type="checkbox" name="privacyConsent" required />개인정보 수집·이용에 동의합니다. <span>(필수)</span></label>
     <Link href="/privacy" target="_blank" rel="noopener noreferrer" style={{ fontSize: 14, color: "var(--brand-orange)" }}>개인정보처리방침 보기 (새 창)</Link>
     <p className="inquiry-help">현재 문의 접수 기능을 준비 중입니다. 입력한 내용은 저장되거나 전송되지 않습니다.</p>
-    <button className="btn" type="submit" disabled>문의 보내기 · 연결 준비 중</button>
+    <button className="btn" type="submit" disabled>문의하기</button>
   </form>;
 }
