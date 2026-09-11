@@ -30,11 +30,11 @@ export default function InstructorProfile() {
     <p>강의 현장과 교재 연구, 교육 활동을 사진으로 전할 공간입니다. 현재는 배치 확인용 데모 이미지입니다.</p>
     <div className={styles.gallery}>
       {[
-        { image: "/media/lesson-concept-structure.jpg", title: "강의 현장", description: "강의와 수업 현장을 담은 사진을 넣을 수 있습니다." },
+        { image: "/media/lecture-classroom-demo.webp", title: "강의 현장", description: "수학을 설명하는 수업 장면을 AI로 구성한 가상 이미지입니다.", badge: "AI 가상 이미지" },
         { image: "/media/banner-reviews.webp", title: "교재·콘텐츠 연구", description: "교재 집필과 수업 준비 과정을 담을 수 있습니다." },
         { image: "/media/banner-ebooks.webp", title: "교육 활동 기록", description: "특강과 행사 등 활동 사진을 넣을 수 있습니다." },
       ].map(activity => <article key={activity.title} className={styles.activity}>
-        <div className={styles.activityImage}><img src={activity.image} alt={`${activity.title} 이미지 배치 예시`} width="1280" height="720" loading="lazy" /><span>DEMO</span></div>
+        <div className={styles.activityImage}><img src={activity.image} alt={`${activity.title} 이미지 배치 예시`} width="1280" height="720" loading="lazy" /><span>{activity.badge || "DEMO"}</span></div>
         <h3>{activity.title}</h3><p>{activity.description}</p>
       </article>)}
     </div>
