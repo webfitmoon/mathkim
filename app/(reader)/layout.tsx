@@ -5,6 +5,7 @@ import { LocaleScope } from "@/components/locale-navigation";
 import { LOCALE_BOOT_SCRIPT } from "@/lib/locale";
 import { languageAlternates } from "@/lib/public-metadata";
 import "./globals.css";
+import ScrollReveal from "../../components/scroll-reveal";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -105,6 +106,7 @@ export default function RootLayout({
         <LocaleScope>
           {children}
           <LanguageGate />
+          <ScrollReveal />
         </LocaleScope>
       </body>
     </html>

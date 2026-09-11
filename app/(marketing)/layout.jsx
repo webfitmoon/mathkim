@@ -1,4 +1,5 @@
 import "./globals.css";
+import ScrollReveal from "../../components/scroll-reveal";
 
 export const viewport = { colorScheme: "light" };
 
@@ -12,5 +13,5 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  return <html lang="ko"><body className="mathskim">{children}</body></html>;
+  return <html lang="ko"><body className="mathskim">{children}<ScrollReveal /></body></html>;
 }
